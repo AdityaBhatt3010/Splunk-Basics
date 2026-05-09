@@ -8,6 +8,8 @@ In this hands-on walkthrough, I explored the fundamentals of **Splunk**, one of 
 
 **Lab Link:** [https://tryhackme.com/room/splunk101](https://tryhackme.com/room/splunk101)
 
+<img width="1536" height="1024" alt="Splunk" src="https://github.com/user-attachments/assets/a4929913-ea9f-4ac5-8f92-3f6e0047a9a5" />
+
 ---
 
 # What is Splunk?
