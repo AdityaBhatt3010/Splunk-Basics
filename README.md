@@ -10,6 +10,8 @@ In this hands-on walkthrough, I explored the fundamentals of **Splunk**, one of 
 
 <img width="1536" height="1024" alt="Splunk" src="https://github.com/user-attachments/assets/a4929913-ea9f-4ac5-8f92-3f6e0047a9a5" />
 
+![Splunk](SOCJr8/Splunk.png)
+
 ---
 
 # What is Splunk?
@@ -243,20 +245,22 @@ Determine how many events exist in the uploaded dataset.
 ### PAYLOAD
 
 ```spl
-index=vpn_logs
+source="VPN_logs.json" host="ip-10-10-40-195" sourcetype="_json"
 ```
 
 ### Why this works
 
 This tells Splunk:
 
-> Search everything inside the `vpn_logs` index.
+> Search everything inside the `VPN_logs` index.
 
 Since no filters are applied, Splunk returns all indexed events.
 
 ### Result
 
 **2862 events**
+
+![1](SOCJ8/1.png)
 
 ---
 
@@ -269,7 +273,7 @@ Identify all VPN activity associated with a specific user.
 ### PAYLOAD
 
 ```spl
-index=vpn_logs UserName="Maleena"
+source="VPN_logs.json" host="ip-10-10-40-195" sourcetype="_json" UserName="Maleena"
 ```
 
 ### Why this works
@@ -291,6 +295,8 @@ Examples:
 
 **60 events**
 
+![2](SOCJ8/2.png)
+
 ---
 
 # 3. Identify Username Behind an IP Address
@@ -302,7 +308,7 @@ Map an IP address back to a user identity.
 ### PAYLOAD
 
 ```spl
-index=vpn_logs Source_ip="107.14.182.38"
+source="VPN_logs.json" host="ip-10-10-40-195" sourcetype="_json" Source_ip="107.14.182.38"
 ```
 
 ### Why this works
@@ -315,6 +321,8 @@ This is common during incident response when an IP is flagged externally and ana
 
 **Smith**
 
+![3](SOCJ8/3.png)
+
 ---
 
 # 4. Events from All Countries Except France
@@ -326,7 +334,7 @@ Exclude one geography from the search.
 ### PAYLOAD
 
 ```spl
-index=vpn_logs NOT Source_Country=France
+source="VPN_logs.json" host="ip-10-10-40-195" sourcetype="_json" NOT Source_Country="France"
 ```
 
 ### Why this works
@@ -343,6 +351,8 @@ This is useful when:
 
 **2814 events**
 
+![4](SOCJ8/4.png)
+
 ---
 
 # 5. Activity from a Specific IP
@@ -354,7 +364,7 @@ Check all events tied to a suspicious IP.
 ### PAYLOAD
 
 ```spl
-index=vpn_logs Source_ip="107.3.206.58"
+source="VPN_logs.json" host="ip-10-10-40-195" sourcetype="_json" Source_ip="107.3.206.58"
 ```
 
 ### Why this works
@@ -370,6 +380,8 @@ This helps in:
 ### Result
 
 **14 events**
+
+![5](SOCJ8/5.png)
 
 ---
 
