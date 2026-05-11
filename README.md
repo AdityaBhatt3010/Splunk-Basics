@@ -260,7 +260,7 @@ Since no filters are applied, Splunk returns all indexed events.
 
 **2862 events**
 
-![1](SOCJ8/1.png)
+![1](SOCJr8/1.png)
 
 ---
 
@@ -295,7 +295,7 @@ Examples:
 
 **60 events**
 
-![2](SOCJ8/2.png)
+![2](SOCJr8/2.png)
 
 ---
 
@@ -321,7 +321,7 @@ This is common during incident response when an IP is flagged externally and ana
 
 **Smith**
 
-![3](SOCJ8/3.png)
+![3](SOCJr8/3.png)
 
 ---
 
@@ -351,7 +351,7 @@ This is useful when:
 
 **2814 events**
 
-![4](SOCJ8/4.png)
+![4](SOCJr8/4.png)
 
 ---
 
@@ -381,7 +381,7 @@ This helps in:
 
 **14 events**
 
-![5](SOCJ8/5.png)
+![5](SOCJr8/5.png)
 
 ---
 
