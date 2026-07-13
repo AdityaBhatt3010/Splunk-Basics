@@ -1,12 +1,10 @@
 # Splunk 101: Hands-On Introduction to SIEM, Log Ingestion, and Basic Threat Hunting
 
-**Keywords:** Splunk, SIEM, Log Analysis, SOC, Threat Hunting, TryHackMe
+**Keywords:** Splunk, SIEM, Log Analysis, SOC, Threat Hunting
 
 Security monitoring is not just about collecting logs—it’s about turning raw machine data into actionable security insights.
 
 In this hands-on walkthrough, I explored the fundamentals of **Splunk**, one of the most widely used SIEM platforms, through a practical lab exercise involving log ingestion and basic investigation queries. Instead of only covering theory, this walkthrough focuses on *what we actually did, why we did it, and how Splunk helps security analysts investigate events efficiently.* 
-
-**Lab Link:** [https://tryhackme.com/room/splunk101](https://tryhackme.com/room/splunk101)
 
 ![Splunk](SOCJr8/Splunk.png)
 
@@ -457,9 +455,5 @@ Then move toward:
 * incident investigations
 
 That’s where Splunk becomes truly powerful.
-
----
-
-*Lab Reference: TryHackMe Splunk 101* 
 
 ---
